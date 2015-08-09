@@ -2,7 +2,7 @@
   "name": "survey-tool",
   "version": "1.0.0",
   "description": "A tool to collect feedback from associates about the facult's sessions. ",
-  "main": "index.js",
+  "main": "cluster.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "body-parser": "^1.13.3",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "socket.io": "^1.3.6"
   }
 }

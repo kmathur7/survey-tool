@@ -1,0 +1,8 @@
+<form name="responseForm">
+	<input type="text" name="responsefield" data-ng-model="response.text" required/>
+	<div ng-if="submitted">
+		<span ng-show="responseForm.responsefield.$error.required">Field cannot be left Empty</span>
+	</div>
+	
+	<button ng-click="submitted=true; send()" ng-disabled="disable">Submit</button>
+</form>
