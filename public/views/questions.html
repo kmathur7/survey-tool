@@ -1,1 +1,13 @@
+
+	<div ng-repeat="question in questions" ng-if="$index==question_no">
+		<h2>{{question.question}}</h2>
+		<ol type="a">
+			<li ng-repeat="option in question.options">{{option}}</li>
+		</ol>
+		<div>Responses:{{count}}</div>
+
+	</div>
+	
+
 <button ng-click="next()">Next Question</button>
+<div>Number of users Connected: {{users}}</div>

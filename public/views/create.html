@@ -1,0 +1,23 @@
+<style type="text/css">
+    .container {
+        width: 500px;
+        clear: both;
+    }
+    .container input {
+        width: 100%;
+        clear: both;
+    }
+
+    </style>
+<div class="container">
+	<form>
+		<label>Question: <input type="text" data-ng-model="question.question"></label>
+		<label>a: <input type="text" data-ng-model="question.a"></label>
+		<label>b: <input type="text" data-ng-model="question.b"></label>
+		<label>c: <input type="text" data-ng-model="question.c"></label>
+		<label>d: <input type="text" data-ng-model="question.d"></label>
+		<label>e: <input type="text" data-ng-model="question.e"></label>
+
+		<button data-ng-click="add()">Submit Question</button>
+	</form>
+</div>

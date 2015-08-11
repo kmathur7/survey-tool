@@ -10,6 +10,10 @@ angular.module('surveyApplication',['ngRoute'])
           templateUrl: 'views/questions.html',
           controller: 'QuestionController'
         })
+      .when('/create', {
+          templateUrl: 'views/create.html',
+          controller: 'CreateController'
+        })
       .otherwise({
         	redirectTo: '/'
       	});
