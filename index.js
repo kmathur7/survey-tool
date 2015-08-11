@@ -62,6 +62,7 @@ app.get('/getquestions',function (req,res){
 app.post('/addquestion',function (req,res){
 	var question = {
 		question:req.body.question,
+		number:req.body.number,
 		options:{
 			a:req.body.a,
 			b:req.body.b,

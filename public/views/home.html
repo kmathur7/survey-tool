@@ -1,8 +1,22 @@
-<form name="responseForm">
-	<input type="text" name="responsefield" data-ng-model="response.text" required/>
-	<div ng-if="submitted">
-		<span ng-show="responseForm.responsefield.$error.required">Field cannot be left Empty</span>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4"><h3>Enter your answers below</h3></div>
+		<div class="col-md-4"></div>
 	</div>
-	
-	<button ng-click="submitted=true; send()" ng-disabled="disable">Submit</button>
-</form>
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<form name="responseForm" class="form-inline">
+			<div class="form-group">
+				<input type="text" class="form-control" name="responsefield" data-ng-model="response.text" placeholder="Enter Response" required/>
+		    </div>
+
+			<button type="submit" class="btn btn-default" ng-click="send()" ng-disabled="disable">Submit</button>
+			</form>
+		</div>
+		<div class="col-md-4"></div>
+	</div>  
+</div>
+
+

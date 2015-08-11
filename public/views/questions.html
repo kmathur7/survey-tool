@@ -1,13 +1,25 @@
-
-	<div ng-repeat="question in questions" ng-if="$index==question_no">
-		<h2>{{question.question}}</h2>
-		<ol type="a">
-			<li ng-repeat="option in question.options">{{option}}</li>
+<div class="container-fluid">
+	<div class="row" ng-repeat="question in questions | orderBy:'question.number'" ng-if="$index==question_no">
+		<div class="col-md-1"></div>
+		<div class="col-md-9">
+		<h1>{{question.question}}</h1>
+		<div class="form-group">
+		<ol type="A">
+			<li ng-repeat="option in question.options" style="
+    font-size: x-large;">{{option}}</li>
 		</ol>
-		<div>Responses:{{count}}</div>
-
+		</div>
+		
+		</div>
+		<div class="col-md-2"><h4>Responses: {{count}}</h4></div>
+	</div>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8"><button class="btn btn-primary" ng-click="next()">Next Question</button></div>
+		<div class="col-md-2"><div><h4>Connected users: {{users}}</h4></div></div>
 	</div>
 	
 
-<button ng-click="next()">Next Question</button>
-<div>Number of users Connected: {{users}}</div>
+
+
+</div>
