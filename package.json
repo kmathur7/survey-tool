@@ -1,9 +1,10 @@
 {
   "name": "survey-tool",
   "version": "1.0.0",
-  "description": "A tool to collect feedback from associates about the facult's sessions. ",
+  "description": "A tool to collect feedback from associates about the faculty's sessions. ",
   "main": "index.js",
   "scripts": {
+    "install": "cd public && npm install",
     "start": "node index.js"
   },
   "repository": {
